@@ -1,6 +1,6 @@
 
 import { StyledHeader } from './setup/styled-components/styled_component';
-import GlobalStyle from '../../container-Audiophile-Shop/src/setup/styled-components/GlobalStyle';
+import GlobalStyle from './setup/styled-components/GlobalStyle';
 function App() {
 
   return (
