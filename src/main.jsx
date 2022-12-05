@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 
-export const mount = (el) => {
+const mount = (el) => {
 
 ReactDOM.createRoot(el).render(
   <React.StrictMode>
@@ -14,3 +14,6 @@ ReactDOM.createRoot(el).render(
 if(!window.containerContext){
   mount(document.getElementById('root'))
 }
+
+
+export { mount }
