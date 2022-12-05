@@ -9,7 +9,7 @@ export default defineConfig({
     name: "headerSubApp",
     filename: "remoteEntry.js",
     exposes: {
-      './HeaderApp': './src/bootstrap',
+      './HeaderApp': './src/App',
     },
     shared: ["react", "react-dom"],
   })],
