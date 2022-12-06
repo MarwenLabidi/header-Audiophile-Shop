@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-const mount = (el) => {
+const mountHeader = (el) => {
         ReactDOM.createRoot(el).render(
                 <React.StrictMode>
                         <App />
@@ -11,7 +11,7 @@ const mount = (el) => {
 };
 
 if (!window.containerContext) {
-        mount(document.getElementById("root"));
+  mountHeader(document.getElementById("root"));
 }
 
-export { mount };
+export { mountHeader };
