@@ -26,11 +26,17 @@ export const StyledHeader = styled.header`
                 display: flex;
                 gap: 1.5rem;
                 letter-spacing: 0.125em;
+                & li{
+                        border: 3px dotted transparent;
+                        outline:none;
+                        padding:3px;
+                }
                 & li:hover,
                 & li:focus {
                         cursor: pointer;
                         color: var(--color-secondary);
                         transition: all 0.3s ease-in-out;
+                        border: 3px dotted red;
                 }
         }
         & .cartContainer {
@@ -41,7 +47,8 @@ export const StyledHeader = styled.header`
                 align-items: center;
                 background-color: transparent;
                 outline: none;
-                border: none;
+                /* border: none; */
+                border: 3px dotted transparent;
 
                 position: relative;
                 & .cart {
@@ -50,10 +57,16 @@ export const StyledHeader = styled.header`
                 & .cart:hover {
                         cursor: pointer;
                 }
+                &:hover,
+                &:focus {
+                        color: var(--color-secondary);
+                        transition: all 0.3s ease-in-out;
+                        border: 3px dotted red;
+                }
                 & .cartCount {
                         position: absolute;
-                        top: 0;
-                        right: 0;
+                        top: -3px;
+                        right: -3px;
                         background-color: var(--color-secondary);
                         width: 20px;
                         height: 20px;
@@ -62,6 +75,7 @@ export const StyledHeader = styled.header`
                         justify-content: center;
                         align-items: center;
                         font-size: 0.8rem;
+                        color:white;
                 }
         }
 `;
